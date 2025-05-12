@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
+import { AppProvider } from './Contexto/Contexto';
 
 
 import Aleatorios from "./Componentes/Aleatorios"
@@ -14,6 +15,7 @@ import Menu from "./Componentes/Menu";
 function App(){
 
   return(
+    <AppProvider>
     <Router>
       <Menu/>
       
@@ -30,6 +32,7 @@ function App(){
       </Routes>
     
     </Router>
+    </AppProvider>
   )
 }
 
