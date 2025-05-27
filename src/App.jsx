@@ -13,6 +13,7 @@ import Usuarios from './Componentes/Usuarios';
 import Detalle from './Componentes/Pokemon';
 import Login from './Componentes/Login';
 import Registro from './Componentes/Registro';
+import Administrador from './Componentes/Administrador';
 
 
 function App() {
@@ -67,6 +68,7 @@ to="/login" />} />
 
 <Route path="/login" element={<Login/>} />
 <Route path="/registro" element={<Registro/>} />
+<Route path="/administrador" element={<Administrador/>} />
 </Routes>
 </Router>
 </AppProvider>
