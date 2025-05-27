@@ -12,6 +12,7 @@ import Favoritos from './Componentes/Favoritos';
 import Usuarios from './Componentes/Usuarios';
 import Detalle from './Componentes/Pokemon';
 import Login from './Componentes/Login';
+import Registro from './Componentes/Registro';
 
 
 function App() {
@@ -65,6 +66,7 @@ to="/login" />} />
 <Navigate to="/login" />} />
 
 <Route path="/login" element={<Login/>} />
+<Route path="/registro" element={<Registro/>} />
 </Routes>
 </Router>
 </AppProvider>
